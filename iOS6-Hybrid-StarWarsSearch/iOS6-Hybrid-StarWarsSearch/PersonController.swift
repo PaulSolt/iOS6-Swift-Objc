@@ -14,7 +14,8 @@ class PersonController: NSObject {
     
     static let shared = PersonController()
     
-    func searchForPeople(with searchTerm: String, completion: @escaping ([LSIPerson]?, Error?) -> Void) {
+    func searchForPeople(with searchTerm: String,
+                         completion: @escaping ([LSIPerson]?, Error?) -> Void) {
         
         
         var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)!
@@ -27,6 +28,41 @@ class PersonController: NSObject {
                 completion(nil, error)
                 return
             }
+            
+            // parse the data
+            
+            guard let data = data else {
+                completion(nil, NSError())  // TODO: use custom enum type
+                return
+            }
+            
+            do {
+                
+                guard let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any],
+                    let personDictionaries = dictionary["results"] as? [[String : Any]]
+                else {
+                    throw NSError() // TODO: update to enum type
+                }
+                
+//                var people = [LSIPerson]()
+//                for dictionary in personDictionaries {
+//                    if let person = LSIPerson(dictionary: dictionary) {
+//                        people.append(person)
+//                    }
+//                }
+                
+                let people = personDictionaries.compactMap { LSIPerson(dictionary: $0) }
+                
+                completion(people, nil)
+                
+                
+            } catch {
+                completion(nil, error)
+                return
+            }
+            
+            
+            
             }.resume()
     }
 }
