@@ -40,7 +40,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _people.count;
+    return self.people.count;
 }
 
 
@@ -48,9 +48,9 @@
     LSIPersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
     
     LSIPerson *person = self.people[indexPath.row];
-    
+
     cell.nameLabel.text = person.name;
-    cell.heightLabel.text = [NSString stringWithFormat:@"%f", person.height];//person.height;
+    cell.heightLabel.text = [NSString stringWithFormat:@"%f", person.height];
     cell.birthYearLabel.text = person.birthYear;
     cell.eyeColorLabel.text = person.eyeColor;
     

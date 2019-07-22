@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_SWIFT_NAME(Person)
 @interface LSIPerson : NSObject
 
 @property (nonatomic, copy, readonly, nonnull) NSString *name;
@@ -15,7 +16,7 @@
 @property (nonatomic, readonly) double height;
 @property (nonatomic, copy, readonly, nonnull) NSString *eyeColor;
 
-- (nullable instancetype)initWithName:(NSString *_Nonnull)name
+- (nonnull instancetype)initWithName:(NSString *_Nonnull)name
                    birthYear:(NSString *_Nonnull)birthYear
                       height:(double)height
                     eyeColor:(NSString *_Nonnull)eyeColor;
