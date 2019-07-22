@@ -17,8 +17,8 @@
     self = [super init];
     if (self) {
         _contacts = @[
-                      [[Contact alloc] initWithName:@"Paul" relationship:@"Myself"],
-                        [[Contact alloc] initWithName:@"Steph" relationship:@"Wife"]
+                      [[LSIContact alloc] initWithName:@"Paul" relationship:@"Myself"],
+                        [[LSIContact alloc] initWithName:@"Steph" relationship:@"Wife"]
                       ];
     }
     return self;

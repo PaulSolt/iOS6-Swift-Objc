@@ -14,7 +14,8 @@ import Foundation
 //@objcMembers // This will work on everything ... best practice is to use @objc
 // for what you need to expose
 
-@objc class Contact: NSObject {
+@objc(LSIContact)
+class Contact: NSObject {
     @objc var name: String
     @objc var relationship: String?
     

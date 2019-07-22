@@ -10,7 +10,7 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
 
-    var contactsController = LSIContactsController()
+    var contactsController = ContactsController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

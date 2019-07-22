@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "iOS6_Contacts-Swift.h"
 
-@class Contact;
+//@class Contact;   // Forward delcarations don't work when we use @objc(ClasName) to rename
+                    // a class name
+//@class LSIContact;
 
+
+// We can change the name of the Objective-C class exposed to Swift
+
+NS_SWIFT_NAME(ContactsController)
 @interface LSIContactsController : NSObject
 
 // To use Swift in Objective-C Collection you must:
@@ -25,7 +32,7 @@
 // null_unspecified: (default) var contacts: [Contact]!
 
 
-@property (nonatomic, readonly, nonnull) NSArray<Contact *> *contacts;
+@property (nonatomic, readonly, nonnull) NSArray<LSIContact *> *contacts;
 //@property (nonatomic, readonly, nullable) NSArray<Contact *> *contacts;
 
 @end
