@@ -15,4 +15,6 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet var heightLabel: UILabel!
     @IBOutlet var birthYearLabel: UILabel!
     @IBOutlet var eyeColorLabel: UILabel!
+    
+    // TODO: add a property to take a LSIPerson and updateViews() based on that
 }
