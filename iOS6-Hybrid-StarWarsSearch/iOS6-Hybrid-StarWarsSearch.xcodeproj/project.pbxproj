@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		BD39325422E6283F00442F1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39325322E6283F00442F1E /* AppDelegate.m */; };
 		BD39325722E6283F00442F1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39325622E6283F00442F1E /* ViewController.m */; };
-		BD39325A22E6283F00442F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39325822E6283F00442F1E /* Main.storyboard */; };
 		BD39325C22E6284000442F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD39325B22E6284000442F1E /* Assets.xcassets */; };
 		BD39325F22E6284000442F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39325D22E6284000442F1E /* LaunchScreen.storyboard */; };
 		BD39326222E6284000442F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326122E6284000442F1E /* main.m */; };
+		BD39326922E6290900442F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39326822E6290900442F1E /* Main.storyboard */; };
+		BD39326C22E6296300442F1E /* LSIPersonSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */; };
+		BD39326F22E629A100442F1E /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326E22E629A100442F1E /* LSIPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,15 @@
 		BD39325322E6283F00442F1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BD39325522E6283F00442F1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BD39325622E6283F00442F1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BD39325922E6283F00442F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD39325B22E6284000442F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD39325E22E6284000442F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD39326022E6284000442F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD39326122E6284000442F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD39326822E6290900442F1E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BD39326A22E6296300442F1E /* LSIPersonSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPersonSearchTableViewController.h; sourceTree = "<group>"; };
+		BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPersonSearchTableViewController.m; sourceTree = "<group>"; };
+		BD39326D22E629A100442F1E /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
+		BD39326E22E629A100442F1E /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,11 @@
 				BD39325322E6283F00442F1E /* AppDelegate.m */,
 				BD39325522E6283F00442F1E /* ViewController.h */,
 				BD39325622E6283F00442F1E /* ViewController.m */,
-				BD39325822E6283F00442F1E /* Main.storyboard */,
+				BD39326822E6290900442F1E /* Main.storyboard */,
+				BD39326D22E629A100442F1E /* LSIPerson.h */,
+				BD39326E22E629A100442F1E /* LSIPerson.m */,
+				BD39326A22E6296300442F1E /* LSIPersonSearchTableViewController.h */,
+				BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */,
 				BD39325B22E6284000442F1E /* Assets.xcassets */,
 				BD39325D22E6284000442F1E /* LaunchScreen.storyboard */,
 				BD39326022E6284000442F1E /* Info.plist */,
@@ -129,8 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD39325F22E6284000442F1E /* LaunchScreen.storyboard in Resources */,
+				BD39326922E6290900442F1E /* Main.storyboard in Resources */,
 				BD39325C22E6284000442F1E /* Assets.xcassets in Resources */,
-				BD39325A22E6283F00442F1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,20 +154,14 @@
 				BD39325722E6283F00442F1E /* ViewController.m in Sources */,
 				BD39326222E6284000442F1E /* main.m in Sources */,
 				BD39325422E6283F00442F1E /* AppDelegate.m in Sources */,
+				BD39326C22E6296300442F1E /* LSIPersonSearchTableViewController.m in Sources */,
+				BD39326F22E629A100442F1E /* LSIPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD39325822E6283F00442F1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD39325922E6283F00442F1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD39325D22E6284000442F1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
