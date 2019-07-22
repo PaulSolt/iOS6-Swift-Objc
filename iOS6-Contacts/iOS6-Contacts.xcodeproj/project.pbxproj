@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BD39322D22E6172600442F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39322C22E6172600442F1E /* AppDelegate.swift */; };
-		BD39322F22E6172600442F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39322E22E6172600442F1E /* ViewController.swift */; };
 		BD39323222E6172600442F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39323022E6172600442F1E /* Main.storyboard */; };
 		BD39323422E6172700442F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD39323322E6172700442F1E /* Assets.xcassets */; };
 		BD39323722E6172700442F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39323522E6172700442F1E /* LaunchScreen.storyboard */; };
+		BD39323F22E6176C00442F1E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39323E22E6176C00442F1E /* Contact.swift */; };
+		BD39324322E6188600442F1E /* LSIContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39324222E6188600442F1E /* LSIContactsController.m */; };
+		BD39324522E6197800442F1E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39324422E6197800442F1E /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD39322922E6172600442F1E /* iOS6-Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS6-Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD39322C22E6172600442F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD39322E22E6172600442F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD39323122E6172600442F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD39323322E6172700442F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD39323622E6172700442F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD39323822E6172700442F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD39323E22E6176C00442F1E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		BD39324022E6188500442F1E /* iOS6-Contacts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS6-Contacts-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD39324122E6188600442F1E /* LSIContactsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactsController.h; sourceTree = "<group>"; };
+		BD39324222E6188600442F1E /* LSIContactsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactsController.m; sourceTree = "<group>"; };
+		BD39324422E6197800442F1E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,15 @@
 			isa = PBXGroup;
 			children = (
 				BD39322C22E6172600442F1E /* AppDelegate.swift */,
-				BD39322E22E6172600442F1E /* ViewController.swift */,
 				BD39323022E6172600442F1E /* Main.storyboard */,
+				BD39324422E6197800442F1E /* ContactsTableViewController.swift */,
+				BD39323E22E6176C00442F1E /* Contact.swift */,
+				BD39324122E6188600442F1E /* LSIContactsController.h */,
+				BD39324222E6188600442F1E /* LSIContactsController.m */,
 				BD39323322E6172700442F1E /* Assets.xcassets */,
 				BD39323522E6172700442F1E /* LaunchScreen.storyboard */,
 				BD39323822E6172700442F1E /* Info.plist */,
+				BD39324022E6188500442F1E /* iOS6-Contacts-Bridging-Header.h */,
 			);
 			path = "iOS6-Contacts";
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					BD39322822E6172600442F1E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD39322F22E6172600442F1E /* ViewController.swift in Sources */,
+				BD39323F22E6176C00442F1E /* Contact.swift in Sources */,
+				BD39324322E6188600442F1E /* LSIContactsController.m in Sources */,
+				BD39324522E6197800442F1E /* ContactsTableViewController.swift in Sources */,
 				BD39322D22E6172600442F1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS6-Contacts/Info.plist";
@@ -291,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS6-Contacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS6-Contacts/iOS6-Contacts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS6-Contacts/Info.plist";
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS6-Contacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS6-Contacts/iOS6-Contacts-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
