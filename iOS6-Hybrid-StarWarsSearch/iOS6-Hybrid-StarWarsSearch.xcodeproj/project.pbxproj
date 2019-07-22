@@ -15,6 +15,7 @@
 		BD39326922E6290900442F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD39326822E6290900442F1E /* Main.storyboard */; };
 		BD39326C22E6296300442F1E /* LSIPersonSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */; };
 		BD39326F22E629A100442F1E /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326E22E629A100442F1E /* LSIPerson.m */; };
+		BD39327222E62BFB00442F1E /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPersonSearchTableViewController.m; sourceTree = "<group>"; };
 		BD39326D22E629A100442F1E /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
 		BD39326E22E629A100442F1E /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
+		BD39327022E62BFB00442F1E /* iOS6-Hybrid-StarWarsSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS6-Hybrid-StarWarsSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 				BD39325522E6283F00442F1E /* ViewController.h */,
 				BD39325622E6283F00442F1E /* ViewController.m */,
 				BD39326822E6290900442F1E /* Main.storyboard */,
+				BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */,
 				BD39326D22E629A100442F1E /* LSIPerson.h */,
 				BD39326E22E629A100442F1E /* LSIPerson.m */,
 				BD39326A22E6296300442F1E /* LSIPersonSearchTableViewController.h */,
@@ -77,6 +81,7 @@
 				BD39325D22E6284000442F1E /* LaunchScreen.storyboard */,
 				BD39326022E6284000442F1E /* Info.plist */,
 				BD39326122E6284000442F1E /* main.m */,
+				BD39327022E62BFB00442F1E /* iOS6-Hybrid-StarWarsSearch-Bridging-Header.h */,
 			);
 			path = "iOS6-Hybrid-StarWarsSearch";
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				TargetAttributes = {
 					BD39324E22E6283F00442F1E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -151,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD39327222E62BFB00442F1E /* PersonTableViewCell.swift in Sources */,
 				BD39325722E6283F00442F1E /* ViewController.m in Sources */,
 				BD39326222E6284000442F1E /* main.m in Sources */,
 				BD39325422E6283F00442F1E /* AppDelegate.m in Sources */,
@@ -289,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS6-Hybrid-StarWarsSearch/Info.plist";
@@ -298,6 +306,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS6-Hybrid-StarWarsSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS6-Hybrid-StarWarsSearch/iOS6-Hybrid-StarWarsSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "iOS6-Hybrid-StarWarsSearch/Info.plist";
@@ -315,6 +327,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.iOS6-Hybrid-StarWarsSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS6-Hybrid-StarWarsSearch/iOS6-Hybrid-StarWarsSearch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

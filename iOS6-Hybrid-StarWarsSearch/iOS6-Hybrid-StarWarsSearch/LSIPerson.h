@@ -10,17 +10,18 @@
 
 @interface LSIPerson : NSObject
 
-@property (nonatomic, copy, readonly) NSString *name;
-@property (nonatomic, copy, readonly) NSString *birthYear;
+@property (nonatomic, copy, readonly, nonnull) NSString *name;
+@property (nonatomic, copy, readonly, nonnull) NSString *birthYear;
 @property (nonatomic, readonly) double height;
-@property (nonatomic, copy, readonly) NSString *eyeColor;
+@property (nonatomic, copy, readonly, nonnull) NSString *eyeColor;
 
-- (instancetype)initWithName:(NSString *)name
-                   birthYear:(NSString *)birthYear
+- (nullable instancetype)initWithName:(NSString *_Nonnull)name
+                   birthYear:(NSString *_Nonnull)birthYear
                       height:(double)height
-                    eyeColor:(NSString *)eyeColor;
+                    eyeColor:(NSString *_Nonnull)eyeColor;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+// Make this failable initializer: init?(dictionary:)
+- (nullable instancetype)initWithDictionary:(NSDictionary *_Nullable)dictionary;
 
 @end
 

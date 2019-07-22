@@ -23,7 +23,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="94" id="a0x-PD-ZKs" customClass="PersonTableViewCell" customModule="iOS6_Hybrid_StarWarsSearch" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="94" id="a0x-PD-ZKs" customClass="LSIPersonTableViewCell">
                                 <rect key="frame" x="0.0" y="72" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0x-PD-ZKs" id="AxF-la-MYY">
@@ -81,10 +81,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="birthYearLabel" destination="hLn-Xe-TWf" id="N5e-Ff-Rrk"/>
-                                    <outlet property="eyeColorLabel" destination="Ee1-y9-KFs" id="X1m-pS-UnI"/>
-                                    <outlet property="heightLabel" destination="pAA-OM-8t8" id="9R5-Ry-McE"/>
-                                    <outlet property="nameLabel" destination="wrt-CW-UDe" id="r9g-f4-RWL"/>
+                                    <outlet property="birthYearLabel" destination="hLn-Xe-TWf" id="N3U-lS-3WB"/>
+                                    <outlet property="eyeColorLabel" destination="Ee1-y9-KFs" id="eXw-Fy-pGF"/>
+                                    <outlet property="heightLabel" destination="pAA-OM-8t8" id="blI-ZD-yBz"/>
+                                    <outlet property="nameLabel" destination="wrt-CW-UDe" id="Aqs-Mu-Wr3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,12 +94,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="searchBar" destination="eBL-Du-K8l" id="jcw-60-Bm6"/>
+                        <outlet property="searchBar" destination="eBL-Du-K8l" id="W0g-y0-4aG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4p-D0-VKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.811594202898561" y="173.4375"/>
+            <point key="canvasLocation" x="-358" y="176"/>
         </scene>
     </scenes>
 </document>
