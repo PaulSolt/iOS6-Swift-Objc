@@ -21,6 +21,7 @@ class ContactsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactsController.contacts.count
+//        return contactsController.contacts?.count ?? 0
     }
 
 
@@ -28,6 +29,7 @@ class ContactsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
 
         let contact = contactsController.contacts[indexPath.row]
+//        guard let contact = contactsController.contacts?[indexPath.row] else { return cell }
         
         cell.textLabel?.text = contact.name
         cell.detailTextLabel?.text = contact.relationship
