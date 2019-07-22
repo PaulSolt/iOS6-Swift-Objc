@@ -21,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[LSIPersonController sharedController] searchForPeopleWith:@"Luke" completion:^(NSArray<LSIPerson *> * _Nullable people, NSError * _Nullable error) {
+        NSLog(@"Luke: %ld", people.count);
+    }];
 }
 
 #pragma mark - Table view data source

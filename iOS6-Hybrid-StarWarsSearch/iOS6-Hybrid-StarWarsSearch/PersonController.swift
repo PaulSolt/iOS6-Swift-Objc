@@ -10,11 +10,12 @@ import UIKit
 
 private let baseURL = URL(string: "https://swapi.co/api/people")!
 
+@objc(LSIPersonController)
 class PersonController: NSObject {
     
-    static let shared = PersonController()
+    @objc(sharedController) static let shared = PersonController()
     
-    func searchForPeople(with searchTerm: String,
+    @objc func searchForPeople(with searchTerm: String,
                          completion: @escaping ([LSIPerson]?, Error?) -> Void) {
         
         
