@@ -16,6 +16,7 @@
 		BD39326C22E6296300442F1E /* LSIPersonSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326B22E6296300442F1E /* LSIPersonSearchTableViewController.m */; };
 		BD39326F22E629A100442F1E /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39326E22E629A100442F1E /* LSIPerson.m */; };
 		BD39327222E62BFB00442F1E /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */; };
+		BD81EFBB22E630D100F1C7D9 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81EFBA22E630D100F1C7D9 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BD39326E22E629A100442F1E /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 		BD39327022E62BFB00442F1E /* iOS6-Hybrid-StarWarsSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS6-Hybrid-StarWarsSearch-Bridging-Header.h"; sourceTree = "<group>"; };
 		BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		BD81EFBA22E630D100F1C7D9 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				BD39325322E6283F00442F1E /* AppDelegate.m */,
 				BD39325522E6283F00442F1E /* ViewController.h */,
 				BD39325622E6283F00442F1E /* ViewController.m */,
+				BD81EFBA22E630D100F1C7D9 /* PersonController.swift */,
 				BD39326822E6290900442F1E /* Main.storyboard */,
 				BD39327122E62BFB00442F1E /* PersonTableViewCell.swift */,
 				BD39326D22E629A100442F1E /* LSIPerson.h */,
@@ -162,6 +165,7 @@
 				BD39326222E6284000442F1E /* main.m in Sources */,
 				BD39325422E6283F00442F1E /* AppDelegate.m in Sources */,
 				BD39326C22E6296300442F1E /* LSIPersonSearchTableViewController.m in Sources */,
+				BD81EFBB22E630D100F1C7D9 /* PersonController.swift in Sources */,
 				BD39326F22E629A100442F1E /* LSIPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
